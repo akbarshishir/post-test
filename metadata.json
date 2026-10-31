@@ -1,0 +1,6 @@
+{
+  "name": "Offline POS Manager",
+  "description": "Offline-first Point of Sale application inspired by smart offline POS systems, featuring Bengali & English languages, BDT currency, inventory management, customer credit ledger, expenses, and profit analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

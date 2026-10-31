@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>কাগজ বক্স - অফলাইন পিওএস ম্যানেজার (Kagoj Box POS)</title>
+    <meta name="description" content="কাগজ বক্স (Kagoj Box) এর সম্পূর্ণ অফলাইন পয়েন্ট অব সেল (POS), ইনভেন্টরি, বাকি খাতা ও লাভ-ক্ষতি ম্যানেজার।" />
+    <meta property="og:title" content="কাগজ বক্স - অফলাইন পিওএস ম্যানেজার (Kagoj Box POS)" />
+    <meta property="og:description" content="কাগজ বক্স (Kagoj Box) এর সম্পূর্ণ অফলাইন পয়েন্ট অব সেল (POS), ইনভেন্টরি, বাকি খাতা ও লাভ-ক্ষতি ম্যানেজার।" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="কাগজ বক্স" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <script>
+      // Safe guard for WebView / file:// protocol to avoid ServiceWorker errors
+      if (typeof window !== 'undefined' && location.protocol === 'file:') {
+        window.__IS_ANDROID_WEBVIEW__ = true;
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-100 text-slate-900 antialiased selection:bg-blue-500 selection:text-white">
+    <div id="root">
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: system-ui, -apple-system, sans-serif; background-color: #0f172a; color: #f8fafc; padding: 24px; text-align: center;">
+        <div style="width: 60px; height: 60px; border-radius: 18px; background: linear-gradient(135deg, #2563eb, #1d4ed8); display: flex; align-items: center; justify-content: center; font-size: 30px; margin-bottom: 16px; box-shadow: 0 10px 25px -5px rgba(37,99,235,0.4);">
+          📦
+        </div>
+        <h1 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; letter-spacing: -0.02em;">কাগজ বক্স - অফলাইন পিওএস</h1>
+        <p style="margin: 0 0 24px 0; font-size: 13px; color: #94a3b8;">অ্যাপটি চালু হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        <div style="width: 36px; height: 36px; border: 3px solid #334155; border-top-color: #3b82f6; border-radius: 50%; animation: spin 0.8s linear infinite;"></div>
+        <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="boxTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="boxLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="boxRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background with Safe Margin for Maskable Icons -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+
+  <!-- Inner Safe Zone Content (within 80% boundary) -->
+  <g filter="url(#shadow)">
+    <!-- 3D Packaging Box -->
+    <!-- Top Face -->
+    <polygon points="256,120 376,180 256,240 136,180" fill="url(#boxTop)" stroke="#FEF3C7" stroke-width="3"/>
+    <!-- Left Face -->
+    <polygon points="136,180 256,240 256,360 136,300" fill="url(#boxLeft)" stroke="#F59E0B" stroke-width="2"/>
+    <!-- Right Face -->
+    <polygon points="256,240 376,180 376,300 256,360" fill="url(#boxRight)" stroke="#D97706" stroke-width="2"/>
+
+    <!-- Tape / Ribbon on Box -->
+    <polygon points="236,130 276,150 276,230 236,210" fill="#FEF3C7" opacity="0.85"/>
+    <polygon points="236,250 276,230 276,350 236,370" fill="#FDE68A" opacity="0.85"/>
+
+    <!-- POS Register Screen / Receipt Strip Overlay -->
+    <g transform="translate(256, 310)">
+      <!-- Receipt paper coming out -->
+      <path d="M-60,30 L60,30 L60,110 L45,100 L30,110 L15,100 L0,110 L-15,100 L-30,110 L-45,100 L-60,110 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="3"/>
+      <!-- Receipt print lines -->
+      <line x1="-40" y1="50" x2="40" y2="50" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-40" y1="65" x2="20" y2="65" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-40" y1="80" x2="30" y2="80" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- App Title Bengali Monogram -->
+  <text x="256" y="470" font-family="'Hind Siliguri', sans-serif" font-weight="bold" font-size="34" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">কাগজ বক্স POS</text>
+</svg>
